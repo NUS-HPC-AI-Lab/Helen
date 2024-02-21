@@ -101,4 +101,4 @@ We provide 7 models in this repo. You can specify the model by the args ```model
 
 ## Acknowledgement
 
-The implementation of Helen is inspired by this wonderful [repo]([davda54/sam: SAM: Sharpness-Aware Minimization (PyTorch) (github.com)](https://github.com/davda54/sam)). We sincerely thank for their wonderful code!
+The implementation of Helen is inspired by this wonderful [repo](https://github.com/davda54/sam). We sincerely thank for their wonderful code!
