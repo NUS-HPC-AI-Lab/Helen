@@ -1,0 +1,13 @@
+model:
+  model: PNN
+  batch_norm: False
+  hidden_units: [1000, 1000, 1000]
+  hidden_activations: relu
+  embedding_dim: 16
+  embedding_dropout: 0
+  embedding_regularizer: 1.0e-09
+  net_dropout: 0
+  net_regularizer: 0
+
+optim:
+  lr: 0.001

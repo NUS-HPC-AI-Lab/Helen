@@ -1,0 +1,8 @@
+optimizer: ???
+lr_net: 0.001
+lr_embed: 0.001
+max_grad_norm: 10.0
+lr_decay: True
+gamma: 0.1
+min_lr: 1e-6
+warmup_steps: -1

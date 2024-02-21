@@ -1,0 +1,15 @@
+defaults:
+  - common
+  - _self_
+
+
+model: DeepFM
+batch_norm: False
+hidden_units: [300, 300, 300]
+hidden_activations: relu
+embedding_dim: 16
+embedding_dropout: 0
+embedding_initializer: 'torch.nn.init.normal_(std=1e-4)'
+embedding_regularizer: 0
+net_dropout: 0
+net_regularizer: 0

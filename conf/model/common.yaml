@@ -1,0 +1,4 @@
+model: ???
+model_root: './checkpoints/'
+
+var_regularizer: 0

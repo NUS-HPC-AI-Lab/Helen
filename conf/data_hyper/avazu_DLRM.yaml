@@ -1,0 +1,19 @@
+model:
+  model: DLRM
+  batch_norm: False
+  embedding_dim: 16
+  embedding_dropout: 0
+  embedding_initializer: 'torch.nn.init.normal_(std=1e-4)'
+  embedding_regularizer: 1.0e-5
+  net_regularizer: 0
+  top_mlp_units: [ 400, 400, 400 ]
+  bottom_mlp_units: [ 400, 400, 400 ]
+  top_mlp_activations: ReLU
+  bottom_mlp_activations: ReLU
+  top_mlp_dropout: 0.3
+  bottom_mlp_dropout: 0.3
+  interaction_op: dot
+
+
+optim:
+  lr: 0.001

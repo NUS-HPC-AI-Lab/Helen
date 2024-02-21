@@ -1,0 +1,34 @@
+defaults:
+  - model: DeepFM
+  - data: avazu
+  - optim: adam
+  - optional data_hyper@_here_: ${data}_${model}
+  #  - override hydra/sweeper: optuna
+  - _self_
+
+description: SAM4CTR
+gpu: [ 0 ]
+
+epoch: 20
+loss: 'binary_crossentropy'
+metrics: [ 'logloss', 'AUC' ]
+task: binary_classification
+
+seed: 2019
+monitor: { AUC: 1, logloss: -1 }
+monitor_mode: 'max'
+
+verbose: 0
+patience: 2
+save_checkpoint: False
+
+
+
+hydra:
+  job:
+    chdir: True
+  run:
+    dir: outputs/${data.name}/${model.model}/${now:%Y%m%d-%H%M%S}
+  sweep:
+    dir: search
+    subdir: ${data.name}/${model.model}/${hydra.job.override_dirname}

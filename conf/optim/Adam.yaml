@@ -1,0 +1,6 @@
+defaults:
+  - common
+  - _self_
+
+optimizer: adam
+betas: [0.9, 0.999]

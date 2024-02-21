@@ -1,0 +1,8 @@
+defaults:
+  - common
+  - _self_
+
+optimizer: Helen
+rho: 0.05
+bound: 0.3
+net_pert: False

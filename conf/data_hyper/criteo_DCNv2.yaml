@@ -1,0 +1,22 @@
+model:
+  model: DCNv2
+  batch_norm: False
+  dnn_activations: relu
+  embedding_dim: 16
+  embedding_initializer: 'torch.nn.init.normal_(std=1e-4)'
+  embedding_regularizer: 1e-05
+  low_rank: 32
+  model_structure: parallel
+  net_dropout: 0.1
+  net_regularizer: 0
+  num_cross_layers: 3
+  num_experts: 4
+  parallel_dnn_hidden_units: [ 500, 500, 500 ]
+  stacked_dnn_hidden_units: [ 400, 400, 400 ]
+  use_low_rank_mixture: False
+
+
+optim:
+  lr: 0.001
+
+

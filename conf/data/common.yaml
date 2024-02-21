@@ -1,0 +1,5 @@
+name: ???
+batch_size: 16384
+shuffle: True
+workers: 6
+eval_batch_size: 16384

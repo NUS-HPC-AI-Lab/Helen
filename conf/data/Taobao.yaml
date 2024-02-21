@@ -1,0 +1,24 @@
+defaults:
+  - common
+  - _self_
+
+
+
+name: Taobao
+data_root: ./data/Taobao
+data_format: h5
+min_categr_count: 10
+feature_cols:
+  - name: [ "userid", "btag_his", "cate_his", "brand_his", "cms_segid", "cms_group_id", "final_gender_code",
+            "age_level", "pvalue_level", "shopping_level", "occupation", "new_user_class_level", "adgroup_id",
+            "cate_id", "campaign_id", "customer", "brand", "price", "pid", "btag" ]
+    active: True
+    dtype: str
+    type: categorical
+
+label_col: { name: clk, dtype: float }
+test_data: ./data/Taobao/Taobao/test.h5
+train_data: ./data/Taobao/Taobao/train.h5
+valid_data: ./data/Taobao/Taobao/valid.h5
+
+
