@@ -56,7 +56,7 @@ optimizer = Helen(embed_params, net_params, lr_embed=1e-3, lr_net=1e-3, rho=0.05
 
 
 for X, y in data:
-    # 1. Count the occurrence of each feature in the batch
+    # 1. count the occurrence of each feature in the batch
     optimizer.count_feature_occurrence(X, feature_params_map, feature_specs)
 	
     # 2. first forward-backward pass
@@ -78,9 +78,9 @@ The most tricky part is you need to construct a map from feature field to its co
 
 We recommend using Docker for reproducing the experiments. 
 
-Use the provided `Dockerfile` to Build a Docker Image.
+Use the provided `Dockerfile` to build a Docker Image.
 
-If docker is not available for your machine, here are some important dependency.
+If docker is not available for your machine, here are some important dependencies.
 
 - [pytorch](https://pytorch.org) 1.10
 - [hydra-core](https://hydra.cc/docs/intro/) 1.2.0 
