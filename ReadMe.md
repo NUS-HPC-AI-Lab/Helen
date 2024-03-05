@@ -6,14 +6,20 @@
 
 
 
-This is our Pytorch implementation for the **Helen** optimizer tailored for CTR prediction models. 
+This is our Pytorch implementation for the [Helen](https://arxiv.org/abs/2403.00798) optimizer tailored for CTR prediction models. For
 
 Helen leverages frequency information to estimate the sharpness of feature embeddings and adjusts the regularization strength accordingly.
 
-Our training code is based on [FuxiCTR](https://github.com/reczoo/FuxiCTR).
-
 Please star this repo and cite us if you find Helen useful. Thank you!
->Zirui Zhu, Yong Liu, Zangwei Zheng, Huifeng Guo, and Yang You. Helen: Optimizing CTR Prediction Models with Frequency-wise Hessian Eigenvalue Regularization, in WWW 2024.
+>@inproceedings{zhu2024helen,
+  author             = {Zhu, Zirui and Liu, Yong and Zheng, Zangwei and Guo, Huifeng and You, Yang},
+  title                  = {Helen: Optimizing CTR Prediction Models with Frequency-wise Hessian Eigenvalue Regularization},
+  booktitle         = {Proceedings of the ACM Web Conference 2024 (WWW '24)},
+  year                 = {2024},
+  doi                   = {10.1145/3589334.3645463},
+  publisher        = {ACM}
+  }
+
 
 
 
@@ -100,5 +106,5 @@ We provide 7 models in this repo. You can specify the model by the args ```model
 
 
 ## Acknowledgement
-
-The implementation of Helen is inspired by this wonderful [repo](https://github.com/davda54/sam). We sincerely thank for their wonderful code!
+Our training code is based on [FuxiCTR](https://github.com/reczoo/FuxiCTR). The implementation of Helen is inspired by this wonderful [repo](https://github.com/davda54/sam). 
+We sincerely thank for their wonderful work.
