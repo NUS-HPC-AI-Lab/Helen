@@ -11,14 +11,16 @@ This is our Pytorch implementation for the [Helen](https://arxiv.org/abs/2403.00
 Helen leverages frequency information to estimate the sharpness of feature embeddings and adjusts the regularization strength accordingly.
 
 Please star this repo and cite us if you find Helen useful. Thank you!
->@inproceedings{zhu2024helen,
-  author             = {Zhu, Zirui and Liu, Yong and Zheng, Zangwei and Guo, Huifeng and You, Yang},
-  title                  = {Helen: Optimizing CTR Prediction Models with Frequency-wise Hessian Eigenvalue Regularization},
-  booktitle         = {Proceedings of the ACM Web Conference 2024 (WWW '24)},
-  year                 = {2024},
-  doi                   = {10.1145/3589334.3645463},
-  publisher        = {ACM}
+```tex
+@inproceedings{zhu2024helen,
+  author    = {Zhu, Zirui and Liu, Yong and Zheng, Zangwei and Guo, Huifeng and You, Yang},
+  title     = {Helen: Optimizing CTR Prediction Models with Frequency-wise Hessian Eigenvalue Regularization},
+  booktitle = {Proceedings of the ACM Web Conference 2024 (WWW '24)},
+  year      = {2024},
+  doi       = {10.1145/3589334.3645463},
+  publisher = {ACM}
   }
+```
 
 
 
