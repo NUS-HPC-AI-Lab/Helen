@@ -3,12 +3,9 @@
 <p align="center" width="100%">
       <img src="figs/hessian.png" style="width: 100%; min-width: 200px; display: block; margin: auto;">
 </p>
+Welcome to the official repository of the **Helen Optimizer**, a plug-and-play optimization algorithm tailored specifically for Click-Through Rate (CTR) prediction models.
 
-
-
-This is our Pytorch implementation for the [Helen](https://arxiv.org/abs/2403.00798) optimizer tailored for CTR prediction models. For
-
-Helen leverages frequency information to estimate the sharpness of feature embeddings and adjusts the regularization strength accordingly.
+Implemented in PyTorch, Helen is designed to seamlessly integrate into your CTR prediction workflows, enhancing the model performance by frequency-wise Hessian eigenvalue regularization. Dive deeper into the technicalities of Helen by reading our [paper](https://arxiv.org/abs/2403.00798).
 
 Please star this repo and cite us if you find Helen useful. Thank you!
 ```tex
@@ -30,8 +27,6 @@ Please star this repo and cite us if you find Helen useful. Thank you!
 It is easy to use Helen to train your own CTR prediction model.
 
 There are three key steps in the update process of Helen: count the feature frequency, first step for perturbation, second step for real update.
-
-
 
 ```python
 import torch
@@ -104,8 +99,6 @@ python main.py data=Criteo model=DeepFM optim=Helen optim.rho=0.05 optim.net_per
 ```
 
 We provide 7 models in this repo. You can specify the model by the args ```model``` in ```[DNN, WideDeep, PNN, DeepFM, DCN, DLRM, DCNv2]```.
-
-
 
 ## Acknowledgement
 Our training code is based on [FuxiCTR](https://github.com/reczoo/FuxiCTR). The implementation of Helen is inspired by this wonderful [repo](https://github.com/davda54/sam). 
